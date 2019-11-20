@@ -1,6 +1,9 @@
 package workshop;
 
-public class WorkShop {
+import java.util.Map;
+import java.util.UUID;
+
+public class WorkShop implements IBuildingManagementSystem{
 
     public static void main(String[] args) {
       TempSensor temp1 = new TempSensor(22, "Temperature", "Sensor1");
@@ -27,6 +30,46 @@ public class WorkShop {
       
       
       
+    }
+
+    @Override
+    public Map<UUID, String> getBuildingInformation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Map<UUID, String> getSensorInformation(UUID buildingId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Map<UUID, String> getActuatorInformation(UUID buildingId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public UUID addTemperatureSensor(UUID buildingId, String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public UUID addCo2Sensor(UUID buildingId, String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeSensor(UUID buildingId, UUID sensorId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public UUID addVentilationActuator(UUID buildingId, String name) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void removeActuator(UUID buildingId, UUID actuatorId) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
