@@ -10,5 +10,30 @@ package workshop;
  * @author nicol
  */
 public class Sensor {
+    private String type;
+    private String IDString;
+
+    public Sensor(String type, String IDString) {
+        this.type = type;
+        this.IDString = IDString;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getIDString() {
+        return IDString;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public void setIDString(String IDString) {
+        this.IDString = IDString;
+    }
+    
+    
     
 }
