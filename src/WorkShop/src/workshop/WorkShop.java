@@ -7,7 +7,7 @@ import java.util.UUID;
 public class WorkShop implements IBuildingManagementSystem{
 
     public static void main(String[] args) {
-      TempSensor temp1 = new TempSensor(22, "Temperature", "Sensor1");
+    /**  TempSensor temp1 = new TempSensor(22, "Temperature", "Sensor1");
       TempSensor temp2 = new TempSensor(18, "Temperature", "Sensor2");
       TempSensor temp3 = new TempSensor(16, "Temperature", "Sensor3");
       TempSensor temp4 = new TempSensor(20, "Temperature", "Sensor4");
@@ -28,49 +28,61 @@ public class WorkShop implements IBuildingManagementSystem{
       Building building3 = new Building("Building 3");
       Building building4 = new Building("Building 4");
       Building building5 = new Building("Building 5");
-      
-      
-      
+      */ 
     }
 
     @Override
     public Map<UUID, String> getBuildingInformation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Map.entry("Building1", "");
+        Map.entry("Building2", "");
+        Map.entry("Building3", "");
+        Map.entry("Building4", "");
+        Map.entry("Building5", "");
+        return null;
+    
     }
 
     @Override
     public Map<UUID, String> getSensorInformation(UUID buildingId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        return null;
+        
     }
 
     @Override
     public Map<UUID, String> getActuatorInformation(UUID buildingId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public UUID addTemperatureSensor(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public UUID addCo2Sensor(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public void removeSensor(UUID buildingId, UUID sensorId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+    
     }
 
     @Override
     public UUID addVentilationActuator(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return null;
+        
     }
 
     @Override
     public void removeActuator(UUID buildingId, UUID actuatorId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+    
     }
     
 }
