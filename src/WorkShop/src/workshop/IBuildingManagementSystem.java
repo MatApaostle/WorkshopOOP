@@ -1,4 +1,4 @@
-package rd01.oop.workshop.acquaintance;
+package workshop;
 
 import java.util.List;
 import java.util.Map;
