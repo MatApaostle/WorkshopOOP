@@ -9,10 +9,7 @@ import java.util.UUID;
  * @author ancla
  */
 public interface IBuildingManagementSystem {   
-    /**
-     *
-     * @return Map containing UUIDs of all buildings in the system along with an associated description (i.e. name)
-     */
+    
     public Map<UUID,String> getBuildingInformation();
 
     /**
